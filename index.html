@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Veronika Ruban — Resume</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Veronika Ruban</h1>
+      <p>Junior Web Developer — HTML & CSS</p>
+    </header>
+
+    <section>
+      <h2>About Me</h2>
+      <p>I’m a beginner front-end developer passionate about clean design and responsive layouts. I love creating beautiful, user-friendly websites with HTML and CSS.</p>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <div class="skills">
+        <span class="skill">HTML</span>
+        <span class="skill">CSS</span>
+        <span class="skill">Responsive Layouts</span>
+        <span class="skill">Flexbox</span>
+        <span class="skill">Grid</span>
+        <span class="skill">Git & GitHub</span>
+        <span class="skill">Figma to Code</span>
+      </div>
+    </section>
+
+    <section>
+  <h2>Portfolio</h2>
+  <div class="project">
+    <h3>My Resume Website</h3>
+    <p>A personal resume site created with HTML and CSS, published on GitHub Pages.</p>
+    <a href="https://nikaruban.github.io/resume-site.github.io/index.html" target="_blank">View project</a>
+  </div>
+
+</section>
+
+    <section>
+  <h2>Education</h2>
+  <p>ITFuture — HTML & CSS Course (3 months, April 2025)</p>
+  <div class="certificate-container">
+    <img src="img/certificat.img.png" alt="HTML & CSS Certificate" class="certificate" onclick="openModal()" style="max-width: 300px; width: 100%; height: auto;" />
+  </div>
+
+  <!-- Modal -->
+  <div id="modal" class="modal" onclick="closeModal()">
+    <span class="modal-close" onclick="closeModal()">×</span>
+    <img class="modal-content" id="modal-img" />
+  </div>
+</section>
+
+<script>
+  function openModal() {
+    const modal = document.getElementById("modal");
+    const modalImg = document.getElementById("modal-img");
+    modal.style.display = "block";
+    modalImg.src = "img/certificat.img.png";
+  }
+
+  function closeModal() {
+    document.getElementById("modal").style.display = "none";
+  }
+</script>
+
+    <section>
+      <h2>Contact</h2>
+      <ul>
+        <li>Email: veronika.ruban03@gmail.com </li>
+        
+     
+      </ul>
+    </section>
+
+    <footer>
+      <p>© 2025 Veronika Ruban. Made with 💜 and HTML.</p>
+    </footer>
+  </div>
+</body>
+</html>
